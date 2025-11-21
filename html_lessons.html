@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML | CodePath</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="html_style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>CodePath</span>
+            </a>
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+        </nav>
+    </header>
+
+    <main class="minimal-layout">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="tech-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h1>HTML Basics</h1>
+                <p>Essential HTML concepts to get you started</p>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <!-- Sidebar -->
+                <aside class="topics-sidebar">
+                    <div class="sidebar-header">
+                        <h3>HTML Topics</h3>
+                    </div>
+
+                    <nav class="topic-nav">
+                        <a href="#structure" class="topic-link active">
+                            <i class="fas fa-code"></i>
+                            <span>Basic Structure</span>
+                        </a>
+                        <a href="#text" class="topic-link">
+                            <i class="fas fa-text-height"></i>
+                            <span>Text Elements</span>
+                        </a>
+                        <a href="#links" class="topic-link">
+                            <i class="fas fa-link"></i>
+                            <span>Links</span>
+                        </a>
+                        <a href="#images" class="topic-link">
+                            <i class="fas fa-image"></i>
+                            <span>Images</span>
+                        </a>
+                        <a href="#lists" class="topic-link">
+                            <i class="fas fa-list"></i>
+                            <span>Lists</span>
+                        </a>
+                        <a href="#tables" class="topic-link">
+                            <i class="fas fa-table"></i>
+                            <span>Tables</span>
+                        </a>
+                        <a href="#forms" class="topic-link">
+                            <i class="fas fa-window-restore"></i>
+                            <span>Forms</span>
+                        </a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Structure Section -->
+                    <section id="structure" class="topic-section active">
+                        <h2>Basic Structure</h2>
+                        <p class="section-description">Every HTML document follows a standard structure that defines the webpage.</p>
+                        
+                        <div class="example-box">
+                            <div class="code-header">
+                                <span>Basic HTML Structure</span>
+                                <button class="copy-btn">
+                                    <i class="far fa-copy"></i>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                    </section>
+
+                    <!-- Text Elements Section -->
+                    <section id="text" class="topic-section">
+                        <h2>Text Elements</h2>
+                        <p class="section-description">Basic elements for displaying and formatting text content.</p>
+                        
+                        <div class="example-box">
+                            <div class="code-header">
+                                <span>Text Formatting Examples</span>
+                                <button class="copy-btn">
+                                    <i class="far fa-copy"></i>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;strong&gt;Bold text&lt;/strong&gt;
+&lt;em&gt;Italic text&lt;/em&gt;
+&lt;br&gt;Line break
+&lt;hr&gt;Horizontal line</code></pre>
+                        </div>
+                    </section>
+
+                    <!-- Links Section -->
+                    <section id="links" class="topic-section">
+                        <h2>Links</h2>
+                        <p class="section-description">Create clickable links to navigate between pages and resources.</p>
+                        
+                        <div class="example-box">
+                            <div class="code-header">
+                                <span>Link Examples</span>
+                                <button class="copy-btn">
+                                    <i class="far fa-copy"></i>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre><code>&lt;!-- Basic link --&gt;
+&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+
+&lt;!-- Link with target --&gt;
+&lt;a href="page.html" target="_blank"&gt;Open in new tab&lt;/a&gt;
+
+&lt;!-- Email link --&gt;
+&lt;a href="mailto:hello@example.com"&gt;Email us&lt;/a&gt;
+
+&lt;!-- Phone link --&gt;
+&lt;a href="tel:+1234567890"&gt;Call us&lt;/a&gt;</code></pre>
+                        </div>
+                    </section>
+
+                    <!-- Images Section -->
+                    <section id="images" class="topic-section">
+                        <h2>Images</h2>
+                        <p class="section-description">Display and optimize images on your webpage.</p>
+                        
+                        <div class="example-box">
+                            <div class="code-header">
+                                <span>Image Examples</span>
+                                <button class="copy-btn">
+                                    <i class="far fa-copy"></i>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre><code>&lt;!-- Basic image --&gt;
+&lt;img src="photo.jpg" alt="Description"&gt;
+
+&lt;!-- Image with size --&gt;
+&lt;img src="logo.png" alt="Logo" width="200" height="100"&gt;
+
+&lt;!-- Responsive image --&gt;
+&lt;img src="image.jpg" alt="Photo" style="max-width: 100%"&gt;
+
+&lt;!-- Image as link --&gt;
+&lt;a href="large.jpg"&gt;
+    &lt;img src="thumb.jpg" alt="Thumbnail"&gt;
+&lt;/a&gt;</code></pre>
+                        </div>
+                    </section>
+
+                    <!-- Lists Section -->
+                    <section id="lists" class="topic-section">
+                        <h2>Lists</h2>
+                        <p class="section-description">Organize content with ordered and unordered lists.</p>
+                        
+                        <div class="example-box">
+                            <div class="code-header">
+                                <span>List Examples</span>
+                                <button class="copy-btn">
+                                    <i class="far fa-copy"></i>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre><code>&lt;!-- Unordered list --&gt;
+&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered list --&gt;
+&lt;ol&gt;
+    &lt;li&gt;First step&lt;/li&gt;
+    &lt;li&gt;Second step&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Description list --&gt;
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                        </div>
+                    </section>
+
+                    <!-- Tables Section -->
+                    <section id="tables" class="topic-section">
+                        <h2>Tables</h2>
+                        <p class="section-description">Display structured data in rows and columns.</p>
+                        
+                        <div class="example-box">
+                            <div class="code-header">
+                                <span>Table Example</span>
+                                <button class="copy-btn">
+                                    <i class="far fa-copy"></i>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+        &lt;th&gt;City&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+        &lt;td&gt;New York&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sarah&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+        &lt;td&gt;London&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                        </div>
+                    </section>
+
+                    <!-- Forms Section -->
+                    <section id="forms" class="topic-section">
+                        <h2>Forms</h2>
+                        <p class="section-description">Collect user input with various form elements.</p>
+                        
+                        <div class="example-box">
+                            <div class="code-header">
+                                <span>Contact Form</span>
+                                <button class="copy-btn">
+                                    <i class="far fa-copy"></i>
+                                    Copy
+                                </button>
+                            </div>
+                            <pre><code>&lt;form action="/submit" method="POST"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+    
+    &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <span>CodePath</span>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 CodePath. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const topicLinks = document.querySelectorAll('.topic-link');
+            const topicSections = document.querySelectorAll('.topic-section');
+
+            // Set active topic
+            topicLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all
+                    topicLinks.forEach(l => l.classList.remove('active'));
+                    topicSections.forEach(s => s.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Show corresponding section
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                    }
+                });
+            });
+
+            // Copy code functionality
+            document.querySelectorAll('.copy-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const codeBlock = this.closest('.example-box').querySelector('code');
+                    const codeText = codeBlock.textContent;
+                    
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        const originalText = this.innerHTML;
+                        this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                        
+                        setTimeout(() => {
+                            this.innerHTML = originalText;
+                        }, 2000);
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
